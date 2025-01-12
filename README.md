@@ -6,9 +6,20 @@
 
 A minimal operating system from scratch for RISC-V aimed to be a learning resource. 
 
-It is entirely based on [Operating system in 1000 lines](https://operating-system-in-1000-lines.vercel.app/en/) and inspired by several other project such as [Starina](https://starina.dev/) and [Xv6 for RISC-V](https://github.com/mit-pdos/xv6-riscv).
+It is entirely based on and inspired by [Operating system in 1000 lines](https://operating-system-in-1000-lines.vercel.app/en/).
 
 Every part of the code will be documented and will be availible soon. Star the project for updates.
 
+# Features of the Minimal Operating System
 
+1. Multitasking
+2. Interrupt Handler
+3. Exception Handler
+4. Paging
+5. Interprocess communication
+6. System calls
+7. Device drivers
+8. File system support
+9. Command line shell
+10. Multi Processor support
 
