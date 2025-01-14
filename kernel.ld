@@ -1,5 +1,5 @@
 /* This is a linker script for our kernel
-   It defines the memory layout for our kernel exxecutable
+   It defines the memory layout for our kernel executable
  
  
    Entry point of kernel is the boot function*/
