@@ -1,11 +1,11 @@
 #!/bin/bash
 set -xue
 
-QEMU=qemu-system-riscv32
+QEMU=qemu-system-riscv64
 
 # new: Path to clang and compiler flags
 CC=clang 
-CFLAGS="-std=c11 -O2 -g3 -Wall -Wextra --target=riscv32 -ffreestanding -nostdlib"
+CFLAGS="-std=c11 -O2 -g3 -Wall -Wextra --target=riscv64 -ffreestanding -nostdlib -mcmodel=medany"
 
 # new: Build the kernel
 $CC $CFLAGS -Wl,-Tkernel.ld -Wl,-Map=kernel.map -o kernel.elf \

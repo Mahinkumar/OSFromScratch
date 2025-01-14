@@ -1,6 +1,6 @@
 typedef unsigned char uint8_t;
-typedef unsigned int uint32_t;
-typedef uint32_t size_t;
+typedef unsigned long uint64_t;
+typedef uint64_t size_t;
 
 extern char __bss[], __bss_end[], __stack_top[];
 

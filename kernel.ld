@@ -18,23 +18,23 @@ SECTIONS {
     }
 
     /* Memory allocation for read only data. */
-    .rodata : ALIGN(4) {
+    .rodata : ALIGN(8) {
         *(.rodata .rodata.*);
     }
 
     /* Memory allocation for read and write data. */
-    .data : ALIGN(4) {
+    .data : ALIGN(8) {
         *(.data .data.*);
     }
 
     /* Memory allocation for read and write initialized to zero */
-    .bss : ALIGN(4) {
+    .bss : ALIGN(8) {
         __bss = .;
         *(.bss .bss.* .sbss .sbss.*);
         __bss_end = .;
     }
 
-    . = ALIGN(4);
-    . += 128 * 1024; /* 128KB */
+    . = ALIGN(8);
+    . += 256 * 1024; /* 256KB */
     __stack_top = .;
 }
