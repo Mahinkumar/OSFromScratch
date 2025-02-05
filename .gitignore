@@ -1,3 +1,4 @@
 opensbi-riscv32-generic-fw_dynamic.bin
 opensbi-riscv64-generic-fw_dynamic.bin
 kernel.elf
+kernel.map
